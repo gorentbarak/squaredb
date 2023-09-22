@@ -1,10 +1,12 @@
 #![allow(dead_code)] // For now.
-#[derive(Debug)]
+use uuid;
 /* 
  * DISCLAIMER:
  * This is currently only stored in memory.
  * I will later make a file format, and add many other optimizations.
 */
+#[derive(Debug)]
+
 pub enum ColumnType {
     /* Currently public, create better abstractions later.
      * This type is to allow for multiple types of columns (currently the Int type, a 64-bit integer, and the Str type, a string).
@@ -20,26 +22,43 @@ pub struct Table {
      * I'll probably make a better abstraction for this later.
      */
     name:    String,
-    columns: Option<Vec<ColumnType>>
+    rows: Option<Vec<Row>>
 }
 
 #[derive(Debug)]
 pub struct Column<T> {
     /* This is for a column in our database.
-     * No abstractions seem to be currently needed.
+     * It's parent is a Row.
      */
     name:    String,
-    content: Option<Vec<T>>
+    content: Option<T>
+}
+#[derive(Debug)]
+pub struct Row {
+    /* This is a row in our database.
+     * It's child is a Column.
+    */
+    id: String, // Use uuid version 4.
+    columns: Vec<ColumnType>,
 }
 
 pub fn create_table(name: &str) -> Table {
     // Create a new table.
     Table {
         name:    name.to_string(),
-        columns: None
+        rows: None
     }
 }
 
+
+impl Row {
+    pub fn new(columns: Vec<ColumnType>) -> Row {
+        Row {
+            id: uuid::Uuid::new_v4().to_string(),
+            columns
+        }
+    }
+}
 impl<T> Column<T> {
     pub fn new(name: &str) -> Column<T> {
         // Create a new column.
@@ -49,29 +68,24 @@ impl<T> Column<T> {
         }
     }
 
-    pub fn set_content(mut self, content: Vec<T>) -> Column<T> {
+    pub fn set_content(mut self, content: T) -> Column<T> {
         // Set the content of a column.
         self.content = Some(content);
-        self
-    }
-
-    pub fn insert_content(mut self, val: T) -> Column<T> {
-        // Insert content to the column.
-        self.content.get_or_insert_with(Vec::new).push(val);
         self
     }
 }
 
 impl Table {
-    pub fn set_columns(mut self, content: Vec<ColumnType>) -> Table {
+    pub fn set_rows(mut self, content: Vec<Row>) -> Table {
         // Set the columns of a table.
-        self.columns = Some(content);
+        self.rows = Some(content);
         self
     }
 
-    pub fn insert_column(mut self, val: ColumnType) -> Table {
+    pub fn insert_row(mut self, val: Row) -> Table {
         // Add a column to the table,
-        self.columns.get_or_insert_with(Vec::new).push(val);
+        self.rows.get_or_insert_with(Vec::new).push(val);
         self
     }
+
 }
