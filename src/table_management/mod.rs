@@ -22,7 +22,7 @@ pub struct Table {
      * I'll probably make a better abstraction for this later.
      */
     name:    String,
-    rows: Option<Vec<Row>>
+    rows: Vec<Row>
 }
 
 #[derive(Debug)]
@@ -45,11 +45,10 @@ pub struct Row {
 pub fn create_table(name: &str) -> Table {
     // Create a new table.
     Table {
-        name:    name.to_string(),
-        rows: None
+        name: name.to_string(),
+        rows: Vec::new()
     }
 }
-
 
 impl Row {
     pub fn new(columns: Vec<ColumnType>) -> Row {
@@ -78,7 +77,7 @@ impl<T> Column<T> {
 impl Table {
     pub fn set_rows(mut self, content: Vec<Row>) -> Table {
         // Set the columns of a table.
-        self.rows = Some(content);
+        self.rows = content;
         self
     }
 
