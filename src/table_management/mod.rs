@@ -21,8 +21,8 @@ pub struct Table {
     /* This is the type used to create a table in the database.
      * I'll probably make a better abstraction for this later.
      */
-    name:    String,
-    rows: Vec<Row>
+    pub(crate) name: String,
+    pub(crate) rows: Vec<Row>
 }
 
 #[derive(Debug)]
@@ -30,16 +30,16 @@ pub struct Column<T> {
     /* This is for a column in our database.
      * It's parent is a Row.
      */
-    name:    String,
-    content: Option<T>
+    pub(crate) name:    String,
+    pub(crate) content: Option<T>
 }
 #[derive(Debug)]
 pub struct Row {
     /* This is a row in our database.
      * It's child is a Column.
     */
-    id: String, // Use uuid version 4.
-    columns: Vec<ColumnType>,
+    pub(crate) id: String, // Use uuid version 4.
+    pub(crate) columns: Vec<ColumnType>,
 }
 
 pub fn create_table(name: &str) -> Table {
@@ -83,7 +83,7 @@ impl Table {
 
     pub fn insert_row(mut self, val: Row) -> Table {
         // Add a column to the table,
-        self.rows.get_or_insert_with(Vec::new).push(val);
+        self.rows.push(val);
         self
     }
 
