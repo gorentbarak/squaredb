@@ -26,7 +26,7 @@ pub struct Table {
 }
 
 #[derive(Debug)]
-pub struct Column<T> {
+pub struct Column<T> where T: serde::Serialize {
     /* This is for a column in our database.
      * It's parent is a Row.
      */
@@ -58,7 +58,7 @@ impl Row {
         }
     }
 }
-impl<T> Column<T> {
+impl<T> Column<T> where T: serde::Serialize {
     pub fn new(name: &str) -> Column<T> {
         // Create a new column.
         Column {
