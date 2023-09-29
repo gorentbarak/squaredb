@@ -4,7 +4,7 @@ use uuid;
 pub mod tests {
     use crate::table_management::Table;
 
-    use super::{create_table, Row, ColumnType, Column};
+    use super::create_table;
 
     #[test]
     fn test_create_table() {
