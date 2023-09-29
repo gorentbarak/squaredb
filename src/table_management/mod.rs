@@ -1,11 +1,26 @@
 #![allow(dead_code)] // For now.
 use uuid;
+#[cfg(test)]
+pub mod tests {
+    use crate::table_management::Table;
+
+    use super::{create_table, Row, ColumnType, Column};
+
+    #[test]
+    fn test_create_table() {
+       let table = create_table("name");
+       assert_eq!(table, Table {
+        name: "name".to_string(),
+        rows: Vec::new(),
+       });
+    }
+}
 /* 
  * DISCLAIMER:
  * This is currently only stored in memory.
  * I will later make a file format, and add many other optimizations.
 */
-#[derive(Debug)]
+#[derive(Debug, PartialEq)]
 
 pub enum ColumnType {
     /* Currently public, create better abstractions later.
@@ -16,7 +31,7 @@ pub enum ColumnType {
     Str(Column<String>), // Support for the string type.
 }
 
-#[derive(Debug)]
+#[derive(Debug, PartialEq)]
 pub struct Table {
     /* This is the type used to create a table in the database.
      * I'll probably make a better abstraction for this later.
@@ -25,7 +40,7 @@ pub struct Table {
     pub(crate) rows: Vec<Row>
 }
 
-#[derive(Debug)]
+#[derive(Debug, PartialEq)]
 pub struct Column<T> where T: serde::Serialize {
     /* This is for a column in our database.
      * It's parent is a Row.
@@ -33,7 +48,7 @@ pub struct Column<T> where T: serde::Serialize {
     pub(crate) name:    String,
     pub(crate) content: Option<T>
 }
-#[derive(Debug)]
+#[derive(Debug, PartialEq)]
 pub struct Row {
     /* This is a row in our database.
      * It's child is a Column.
