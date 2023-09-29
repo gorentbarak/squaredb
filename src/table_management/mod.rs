@@ -4,7 +4,7 @@ use uuid;
 pub mod tests {
     use crate::table_management::Table;
 
-    use super::create_table;
+    use super::{create_table, ColumnType, Column};
 
     #[test]
     fn test_create_table() {
@@ -13,6 +13,24 @@ pub mod tests {
         name: "name".to_string(),
         rows: Vec::new(),
        });
+    }
+    
+    #[test]
+    fn test_columntype_int() {
+        let columntype = ColumnType::Int(Column::new("column"));
+        assert_eq!(columntype, ColumnType::Int(Column {
+            name: "column".to_string(),
+            content: None
+        }))
+    }
+
+    #[test]
+    fn test_columntype_str() {
+        let columntype = ColumnType::Str(Column::new("column"));
+        assert_eq!(columntype, ColumnType::Str(Column {
+            name: "column".to_string(),
+            content: None
+        }))
     }
 }
 /* 
