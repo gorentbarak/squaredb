@@ -3,6 +3,18 @@ The idea behind this was to create a new database, focusing on the data structur
 
 I am also really interested in learning Rust, and this was a way for me to learn it.
 
-I came up with a really-good note-taking system for this, which I think I'm going to reuse, because it helped make me *way* more productive.
+I made a really good note-taking system for this, which I will probably reuse.
 
-It's currently terrible, and will have to go through some *very* harsh refactoring.
+<details>
+
+<summary>My note-taking system</summary>
+
+- For markdown notes I use [Nota](https://nota.md)
+- For a kanban board I use [Nullboard](https://nullboard.io)
+- For whiteboards I use [Excalidraw](https://excalidraw.com)
+
+## Roadmap
+- [X] Create structures to store the database in-memory.
+- [ ] Implement a file format. (being worked on)
+- [ ] Implement a server.
+- [ ] Implement RocksDb.
