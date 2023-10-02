@@ -13,6 +13,8 @@ I made a really good note-taking system for this, which I will probably reuse.
 - For a kanban board I use [Nullboard](https://nullboard.io)
 - For whiteboards I use [Excalidraw](https://excalidraw.com)
 
+</details>
+
 ## Roadmap
 - [X] Create structures to store the database in-memory.
 - [ ] Implement a file format. (being worked on)
