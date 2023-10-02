@@ -10,7 +10,7 @@ I made a really good note-taking system for this, which I will probably reuse.
 <summary>My note-taking system</summary>
 
 - For markdown notes I use [Nota](https://nota.md)
-- For a kanban board I use [Nullboard](https://nullboard.io)
+- For a kanban board I use [Nullboard](https://nullboard.io/preview)
 - For whiteboards I use [Excalidraw](https://excalidraw.com)
 
 </details>
