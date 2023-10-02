@@ -1,7 +1,0 @@
-dict = { lcbracket  ~ ( kv ~ "," )* ~ rcbracket }
-
-kv       =  { key ~ space* ~ ":" ~ space* ~ value }
-space    = _{ " " }
-cbracket =  { rcbracket  | lcbracket }
-	rcbracket = { "}" }
-	lcbracket = { "{" }
