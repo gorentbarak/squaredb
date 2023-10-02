@@ -2,17 +2,24 @@
 use uuid;
 #[cfg(test)]
 pub mod tests {
-    use crate::table_management::Table;
-
-    use super::{create_table, ColumnType, Column};
+    use super::{create_table, ColumnType, Column, Row};
 
     #[test]
     fn test_create_table() {
        let table = create_table("name");
-       assert_eq!(table, Table {
-        name: "name".to_string(),
-        rows: Vec::new(),
-       });
+       assert_eq!(table.name, "name");
+       assert_eq!(table.rows.len(), 0);
+    }
+
+    #[test]
+    fn test_table() {
+        let table = create_table("name").insert_row(Row::new(vec![ColumnType::Int(Column::new("column"))]));
+        assert_eq!(table.name, "name");
+        assert_eq!(table.rows.len(), 1);
+        assert_eq!(table.rows[0].columns[0], ColumnType::Int(Column {
+            name: "column".to_string(),
+            content: None
+        }));
     }
     
     #[test]
@@ -31,6 +38,17 @@ pub mod tests {
             name: "column".to_string(),
             content: None
         }))
+    }
+
+    #[test]
+    fn test_row() {
+        let row = Row::new(vec![ColumnType::Int(Column::new("column"))]);
+        assert_eq!(row.columns[0], ColumnType::Int(Column {
+            name: "column".to_string(),
+            content: None
+        }));
+        assert_eq!(row.columns.len(), 1);
+        assert_eq!(row.id.len(), 36);
     }
 }
 /* 
