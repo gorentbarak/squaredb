@@ -18,6 +18,5 @@ I made a really good note-taking system for this, which I will probably reuse.
 
 ## Roadmap
 - [X] Create structures to store the database in-memory.
-- [ ] Implement a file format. (being worked on)
-- [ ] Implement a server.
-- [ ] Implement RocksDb.
+- [X] Implement RocksDb.
+- [ ] Implement a server with Axum.
