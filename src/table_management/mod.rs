@@ -77,7 +77,7 @@ pub struct Table {
 }
 
 #[derive(Debug, PartialEq)]
-pub struct Column<T> where T: serde::Serialize {
+pub struct Column<T> {
     /* This is for a column in our database.
      * It's parent is a Row.
      */
@@ -138,4 +138,13 @@ impl Table {
         self
     }
 
+}
+
+impl ColumnType {
+    pub fn unwrap<T>(&self) -> Column<T> {
+        match self {
+            ColumnType::Int(c) => c.clone(),
+            ColumnType::Str(c) => c.clone()
+        }
+    }
 }
