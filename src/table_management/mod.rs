@@ -21,10 +21,7 @@ pub mod tests {
         assert_eq!(table.rows.len(), 1);
         assert_eq!(
             table.rows[0].columns[0],
-            ColumnType::Int(Column {
-                name: "column".to_string(),
-                content: None
-            })
+            ColumnType::Int(Column { name: "column".to_string(), content: None })
         );
     }
 
@@ -33,10 +30,7 @@ pub mod tests {
         let columntype = ColumnType::Int(Column::new("column"));
         assert_eq!(
             columntype,
-            ColumnType::Int(Column {
-                name: "column".to_string(),
-                content: None
-            })
+            ColumnType::Int(Column { name: "column".to_string(), content: None })
         )
     }
 
@@ -45,10 +39,7 @@ pub mod tests {
         let columntype = ColumnType::Str(Column::new("column"));
         assert_eq!(
             columntype,
-            ColumnType::Str(Column {
-                name: "column".to_string(),
-                content: None
-            })
+            ColumnType::Str(Column { name: "column".to_string(), content: None })
         )
     }
 
@@ -57,10 +48,7 @@ pub mod tests {
         let row = Row::new(vec![ColumnType::Int(Column::new("column"))]);
         assert_eq!(
             row.columns[0],
-            ColumnType::Int(Column {
-                name: "column".to_string(),
-                content: None
-            })
+            ColumnType::Int(Column { name: "column".to_string(), content: None })
         );
         assert_eq!(row.columns.len(), 1);
         assert_eq!(row.id.len(), 36);
@@ -81,7 +69,7 @@ pub enum ColumnType {
     Str(Column<String>), // Support for the string type.
 }
 
-#[derive(Debug, PartialEq, Serialize, Deserialize)]
+#[derive(Debug, PartialEq, Clone, Serialize, Deserialize)]
 pub struct Table {
     /* This is the type used to create a table in the database.
      * I'll probably make a better abstraction for this later.
@@ -109,27 +97,18 @@ pub struct Row {
 
 pub fn create_table(name: &str) -> Table {
     // Create a new table.
-    Table {
-        name: name.to_string(),
-        rows: Vec::new(),
-    }
+    Table { name: name.to_string(), rows: Vec::new() }
 }
 
 impl Row {
     pub fn new(columns: Vec<ColumnType>) -> Row {
-        Row {
-            id: uuid::Uuid::new_v4().to_string(),
-            columns,
-        }
+        Row { id: uuid::Uuid::new_v4().to_string(), columns }
     }
 }
 impl<T> Column<T> {
     pub fn new(name: &str) -> Column<T> {
         // Create a new column.
-        Column {
-            name: name.to_string(),
-            content: None,
-        }
+        Column { name: name.to_string(), content: None }
     }
 
     pub fn set_content(mut self, content: T) -> Column<T> {
