@@ -23,17 +23,17 @@ pub async fn main() {
 async fn get_table(extract::Path(name): extract::Path<String>) -> Response<Full<Bytes>> {
     let table = storage::file_to_table(format!(r"{}/.squaredb/{}", home_dir().unwrap().display(), &name).as_str());
     let response = serde_json::to_string(&table.unwrap()).unwrap();
-    return Response::builder()
+    Response::builder()
         .status(200)
         .header("Content-Type", "application/json; charset=utf-8")
         .body(Full::from(Bytes::from(response)))
-        .unwrap();
+        .unwrap()
 }
 async fn post_table(extract::Json(table): extract::Json<Table>) -> Response<Full<Bytes>> {
     let _ = storage::table_to_file(format!(r"{}/.squaredb/{}", home_dir().unwrap().display(), &table.name).as_str(), table);
-    return Response::builder()
+    Response::builder()
         .status(200)
         .header("Content-Type", "application/json; charset=utf-8")
         .body(Full::from("{}"))
-        .unwrap();
+        .unwrap()
 }

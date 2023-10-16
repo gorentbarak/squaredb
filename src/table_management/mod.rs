@@ -1,4 +1,3 @@
-#![allow(dead_code)] // For now.
 use serde::{Deserialize, Serialize};
 
 use uuid;
