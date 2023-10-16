@@ -5,6 +5,7 @@ edition = "2021"
 authors = ["Goren Barak"]
 repository = "https://github.com/gorentbarak/squaredb"
 description = "A new database that I decided to make."
+license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
