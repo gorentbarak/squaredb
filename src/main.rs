@@ -1,16 +1,13 @@
-use crate::table_management::ColumnType;
-
 pub mod server;
 pub mod storage;
 pub mod table_management;
 #[tokio::main]
 async fn main() {
-    let table =
-        table_management::create_table("TEST").insert_row(table_management::Row::new(vec![
-            ColumnType::Int(table_management::Column::new("name")),
-        ]));
-    dbg!(&table);
-    storage::table_to_file("/home/goren/rocksdb/file.db", table).unwrap();
-    dbg!(storage::file_to_table("/home/goren/rocksdb/file.db/").unwrap());
+    const MESSAGE: [&str; 3] = ["SquareDB",
+    "To get a table from the database, go to https://localhost:3000/get_table/<table_name>",
+    "To send a table to the databse, go to https://localhost:3000/post_table and send JSON-encoded content with the table's data and a request header Content-Type: application/json"];
+    for i in MESSAGE.iter() {
+        println!("{}", i);
+    }
     server::main().await;
 }
