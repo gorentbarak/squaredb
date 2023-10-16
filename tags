@@ -1573,7 +1573,7 @@
 14	target/debug/.fingerprint/lz4-sys-b0b14f685a468cfa/run-build-script-build-script-build.json	/^{"rustc":16895609601713598366,"features":"","target":0,"profile":0,"path":0,"deps":[[94398953456/;"	o	array:local
 14	target/debug/.fingerprint/zstd-sys-75542bf78a37ec8c/run-build-script-build-script-build.json	/^{"rustc":16895609601713598366,"features":"","target":0,"profile":0,"path":0,"deps":[[86701349786/;"	o	array:local
 14	target/debug/.fingerprint/zstd-sys-d26f9b48c0822b0f/run-build-script-build-script-build.json	/^{"rustc":16895609601713598366,"features":"","target":0,"profile":0,"path":0,"deps":[[86701349786/;"	o	array:local
-14371922958718593042	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"15729799797837862367":{"success":true,"stat/;"	o	object:outputs
+14371922958718593042	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"4614504638168534921":{"success":true,"statu/;"	o	object:outputs
 15	target/debug/.fingerprint/axum-08a8ca9d7dcadb19/lib-axum.json	/^{"rustc":16895609601713598366,"features":"[\\"default\\", \\"form\\", \\"http1\\", \\"json\\", \\/;"	a	array:deps
 15	target/debug/.fingerprint/axum-7acd409a2e5c64aa/lib-axum.json	/^{"rustc":16895609601713598366,"features":"[\\"default\\", \\"form\\", \\"http1\\", \\"json\\", \\/;"	a	array:deps
 15	target/debug/.fingerprint/bzip2-sys-2825a4a2884c478b/run-build-script-build-script-build.json	/^{"rustc":16895609601713598366,"features":"","target":0,"profile":0,"path":0,"deps":[[87358460190/;"	o	array:local
@@ -1586,7 +1586,7 @@
 15	target/debug/.fingerprint/lz4-sys-b0b14f685a468cfa/run-build-script-build-script-build.json	/^{"rustc":16895609601713598366,"features":"","target":0,"profile":0,"path":0,"deps":[[94398953456/;"	o	array:local
 15	target/debug/.fingerprint/zstd-sys-75542bf78a37ec8c/run-build-script-build-script-build.json	/^{"rustc":16895609601713598366,"features":"","target":0,"profile":0,"path":0,"deps":[[86701349786/;"	o	array:local
 15	target/debug/.fingerprint/zstd-sys-d26f9b48c0822b0f/run-build-script-build-script-build.json	/^{"rustc":16895609601713598366,"features":"","target":0,"profile":0,"path":0,"deps":[[86701349786/;"	o	array:local
-15729799797837862367	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"15729799797837862367":{"success":true,"stat/;"	o	object:outputs
+15729799797837862367	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"4614504638168534921":{"success":true,"statu/;"	o	object:outputs
 16	target/debug/.fingerprint/axum-08a8ca9d7dcadb19/lib-axum.json	/^{"rustc":16895609601713598366,"features":"[\\"default\\", \\"form\\", \\"http1\\", \\"json\\", \\/;"	a	array:deps
 16	target/debug/.fingerprint/axum-7acd409a2e5c64aa/lib-axum.json	/^{"rustc":16895609601713598366,"features":"[\\"default\\", \\"form\\", \\"http1\\", \\"json\\", \\/;"	a	array:deps
 16	target/debug/.fingerprint/bzip2-sys-2825a4a2884c478b/run-build-script-build-script-build.json	/^{"rustc":16895609601713598366,"features":"","target":0,"profile":0,"path":0,"deps":[[87358460190/;"	o	array:local
@@ -2781,7 +2781,7 @@
 45	target/debug/.fingerprint/librocksdb-sys-b2e7dc31fcc7165d/run-build-script-build-script-build.json	/^{"rustc":16895609601713598366,"features":"","target":0,"profile":0,"path":0,"deps":[[87358460190/;"	o	array:local
 46	target/debug/.fingerprint/librocksdb-sys-1cec20c2033fce12/run-build-script-build-script-build.json	/^{"rustc":16895609601713598366,"features":"","target":0,"profile":0,"path":0,"deps":[[87358460190/;"	o	array:local
 46	target/debug/.fingerprint/librocksdb-sys-b2e7dc31fcc7165d/run-build-script-build-script-build.json	/^{"rustc":16895609601713598366,"features":"","target":0,"profile":0,"path":0,"deps":[[87358460190/;"	o	array:local
-4614504638168534921	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"15729799797837862367":{"success":true,"stat/;"	o	object:outputs
+4614504638168534921	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"4614504638168534921":{"success":true,"statu/;"	o	object:outputs
 47	target/debug/.fingerprint/librocksdb-sys-1cec20c2033fce12/run-build-script-build-script-build.json	/^{"rustc":16895609601713598366,"features":"","target":0,"profile":0,"path":0,"deps":[[87358460190/;"	o	array:local
 47	target/debug/.fingerprint/librocksdb-sys-b2e7dc31fcc7165d/run-build-script-build-script-build.json	/^{"rustc":16895609601713598366,"features":"","target":0,"profile":0,"path":0,"deps":[[87358460190/;"	o	array:local
 48	target/debug/.fingerprint/librocksdb-sys-1cec20c2033fce12/run-build-script-build-script-build.json	/^{"rustc":16895609601713598366,"features":"","target":0,"profile":0,"path":0,"deps":[[87358460190/;"	o	array:local
@@ -5257,9 +5257,9 @@ checksumFlag	target/debug/build/zstd-sys-75542bf78a37ec8c/out/include/zstd.h	/^ 
 checksumFlag	target/debug/build/zstd-sys-75542bf78a37ec8c/out/include/zstd.h	/^    unsigned checksumFlag;$/;"	m	struct:__anon79a4c15e1408	typeref:typename:unsigned
 checksumFlag	target/debug/build/zstd-sys-d26f9b48c0822b0f/out/include/zstd.h	/^    int checksumFlag;    \/**< 1: generate a 32-bits checksum using XXH64 algorithm at end of fr/;"	m	struct:__anon01a35c120908	typeref:typename:int
 checksumFlag	target/debug/build/zstd-sys-d26f9b48c0822b0f/out/include/zstd.h	/^    unsigned checksumFlag;$/;"	m	struct:__anon01a35c121408	typeref:typename:unsigned
-code	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"15729799797837862367":{"success":true,"stat/;"	n	object:outputs.14371922958718593042
-code	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"15729799797837862367":{"success":true,"stat/;"	n	object:outputs.15729799797837862367
-code	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"15729799797837862367":{"success":true,"stat/;"	n	object:outputs.4614504638168534921
+code	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"4614504638168534921":{"success":true,"statu/;"	n	object:outputs.14371922958718593042
+code	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"4614504638168534921":{"success":true,"statu/;"	n	object:outputs.15729799797837862367
+code	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"4614504638168534921":{"success":true,"statu/;"	n	object:outputs.4614504638168534921
 columns	src/table_management/mod.rs	/^    pub(crate) columns: Vec<ColumnType>,$/;"	m	struct:Row
 comm_max	target/debug/build/libz-sys-502ba305e2cac9b5/out/include/zlib.h	/^    uInt    comm_max;   \/* space at comment (only when reading header) *\/$/;"	m	struct:gz_header_s	typeref:typename:uInt
 comm_max	target/debug/build/libz-sys-5485aa300a079492/out/include/zlib.h	/^    uInt    comm_max;   \/* space at comment (only when reading header) *\/$/;"	m	struct:gz_header_s	typeref:typename:uInt
@@ -7316,7 +7316,7 @@ output	target/debug/.fingerprint/proc-macro2-b6dabe2b6951c43b/run-build-script-b
 output	target/debug/.fingerprint/rustversion-f78dcbf72b0576cb/run-build-script-build-script-build.json	/^{"rustc":16895609601713598366,"features":"","target":0,"profile":0,"path":0,"deps":[[18418909915/;"	s	object:local.0.RerunIfChanged
 output	target/debug/.fingerprint/serde-e265371a84372c2b/run-build-script-build-script-build.json	/^{"rustc":16895609601713598366,"features":"","target":0,"profile":0,"path":0,"deps":[[22708195598/;"	s	object:local.0.RerunIfChanged
 output	target/debug/.fingerprint/serde_json-7e6a9b91731f2e7b/run-build-script-build-script-build.json	/^{"rustc":16895609601713598366,"features":"","target":0,"profile":0,"path":0,"deps":[[89605888952/;"	s	object:local.0.RerunIfChanged
-outputs	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"15729799797837862367":{"success":true,"stat/;"	o
+outputs	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"4614504638168534921":{"success":true,"statu/;"	o
 overflow_arg_area	target/debug/build/librocksdb-sys-1cec20c2033fce12/out/bindings.rs	/^    pub overflow_arg_area: *mut libc::c_void,$/;"	m	struct:__va_list_tag
 overflow_arg_area	target/debug/build/librocksdb-sys-b2e7dc31fcc7165d/out/bindings.rs	/^    pub overflow_arg_area: *mut libc::c_void,$/;"	m	struct:__va_list_tag
 parse_elf_header	target/debug/build/clang-sys-e771581f38c9273e/out/dynamic.rs	/^fn parse_elf_header(path: &Path) -> io::Result<u8> {$/;"	f
@@ -9985,7 +9985,7 @@ rustc	target/debug/.fingerprint/zstd-sys-75542bf78a37ec8c/run-build-script-build
 rustc	target/debug/.fingerprint/zstd-sys-78fdf1792599e609/build-script-build-script-build.json	/^{"rustc":16895609601713598366,"features":"[\\"default\\", \\"legacy\\", \\"zdict_builder\\"]","t/;"	n
 rustc	target/debug/.fingerprint/zstd-sys-c149e84fb65f5697/lib-zstd-sys.json	/^{"rustc":16895609601713598366,"features":"[\\"default\\", \\"legacy\\", \\"zdict_builder\\"]","t/;"	n
 rustc	target/debug/.fingerprint/zstd-sys-d26f9b48c0822b0f/run-build-script-build-script-build.json	/^{"rustc":16895609601713598366,"features":"","target":0,"profile":0,"path":0,"deps":[[86701349786/;"	n
-rustc_fingerprint	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"15729799797837862367":{"success":true,"stat/;"	n
+rustc_fingerprint	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"4614504638168534921":{"success":true,"statu/;"	n
 rustflags	target/debug/.fingerprint/async-trait-0c700219a37c8f27/lib-async-trait.json	/^{"rustc":16895609601713598366,"features":"[]","target":15022530379800344513,"profile":1317860917/;"	a
 rustflags	target/debug/.fingerprint/async-trait-5590a935f3443b04/run-build-script-build-script-build.json	/^{"rustc":16895609601713598366,"features":"","target":0,"profile":0,"path":0,"deps":[[14197070920/;"	a
 rustflags	target/debug/.fingerprint/async-trait-84bb06d090014724/build-script-build-script-build.json	/^{"rustc":16895609601713598366,"features":"[]","target":427768481117760528,"profile":131786091784/;"	a
@@ -10252,15 +10252,15 @@ state	target/debug/build/bzip2-sys-2825a4a2884c478b/out/include/bzlib.h	/^      
 state	target/debug/build/bzip2-sys-d203578e776b5c65/out/include/bzlib.h	/^      void *state;$/;"	m	struct:__anon2dfc61cd0108	typeref:typename:void *
 state	target/debug/build/libz-sys-502ba305e2cac9b5/out/include/zlib.h	/^    struct internal_state FAR *state; \/* not visible by applications *\/$/;"	m	struct:z_stream_s	typeref:struct:internal_state FAR *
 state	target/debug/build/libz-sys-5485aa300a079492/out/include/zlib.h	/^    struct internal_state FAR *state; \/* not visible by applications *\/$/;"	m	struct:z_stream_s	typeref:struct:internal_state FAR *
-status	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"15729799797837862367":{"success":true,"stat/;"	s	object:outputs.14371922958718593042
-status	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"15729799797837862367":{"success":true,"stat/;"	s	object:outputs.15729799797837862367
-status	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"15729799797837862367":{"success":true,"stat/;"	s	object:outputs.4614504638168534921
-stderr	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"15729799797837862367":{"success":true,"stat/;"	s	object:outputs.14371922958718593042
-stderr	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"15729799797837862367":{"success":true,"stat/;"	s	object:outputs.15729799797837862367
-stderr	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"15729799797837862367":{"success":true,"stat/;"	s	object:outputs.4614504638168534921
-stdout	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"15729799797837862367":{"success":true,"stat/;"	s	object:outputs.14371922958718593042
-stdout	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"15729799797837862367":{"success":true,"stat/;"	s	object:outputs.15729799797837862367
-stdout	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"15729799797837862367":{"success":true,"stat/;"	s	object:outputs.4614504638168534921
+status	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"4614504638168534921":{"success":true,"statu/;"	s	object:outputs.14371922958718593042
+status	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"4614504638168534921":{"success":true,"statu/;"	s	object:outputs.15729799797837862367
+status	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"4614504638168534921":{"success":true,"statu/;"	s	object:outputs.4614504638168534921
+stderr	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"4614504638168534921":{"success":true,"statu/;"	s	object:outputs.14371922958718593042
+stderr	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"4614504638168534921":{"success":true,"statu/;"	s	object:outputs.15729799797837862367
+stderr	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"4614504638168534921":{"success":true,"statu/;"	s	object:outputs.4614504638168534921
+stdout	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"4614504638168534921":{"success":true,"statu/;"	s	object:outputs.14371922958718593042
+stdout	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"4614504638168534921":{"success":true,"statu/;"	s	object:outputs.15729799797837862367
+stdout	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"4614504638168534921":{"success":true,"statu/;"	s	object:outputs.4614504638168534921
 steps	target/debug/build/zstd-sys-75542bf78a37ec8c/out/include/zdict.h	/^    unsigned steps;              \/* Number of steps : Only used for optimization : 0 means defa/;"	m	struct:__anon8a7914770208	typeref:typename:unsigned
 steps	target/debug/build/zstd-sys-75542bf78a37ec8c/out/include/zdict.h	/^    unsigned steps;              \/* Number of steps : Only used for optimization : 0 means defa/;"	m	struct:__anon8a7914770308	typeref:typename:unsigned
 steps	target/debug/build/zstd-sys-d26f9b48c0822b0f/out/include/zdict.h	/^    unsigned steps;              \/* Number of steps : Only used for optimization : 0 means defa/;"	m	struct:__anon124b05ab0208	typeref:typename:unsigned
@@ -10268,10 +10268,10 @@ steps	target/debug/build/zstd-sys-d26f9b48c0822b0f/out/include/zdict.h	/^    uns
 storage	src/main.rs	/^pub mod storage;$/;"	n
 strategy	target/debug/build/zstd-sys-75542bf78a37ec8c/out/include/zstd.h	/^    ZSTD_strategy strategy;   \/**< see ZSTD_strategy definition above *\/$/;"	m	struct:__anon79a4c15e0808	typeref:typename:ZSTD_strategy
 strategy	target/debug/build/zstd-sys-d26f9b48c0822b0f/out/include/zstd.h	/^    ZSTD_strategy strategy;   \/**< see ZSTD_strategy definition above *\/$/;"	m	struct:__anon01a35c120808	typeref:typename:ZSTD_strategy
-success	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"15729799797837862367":{"success":true,"stat/;"	b	object:outputs.14371922958718593042
-success	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"15729799797837862367":{"success":true,"stat/;"	b	object:outputs.15729799797837862367
-success	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"15729799797837862367":{"success":true,"stat/;"	b	object:outputs.4614504638168534921
-successes	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"15729799797837862367":{"success":true,"stat/;"	o
+success	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"4614504638168534921":{"success":true,"statu/;"	b	object:outputs.14371922958718593042
+success	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"4614504638168534921":{"success":true,"statu/;"	b	object:outputs.15729799797837862367
+success	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"4614504638168534921":{"success":true,"statu/;"	b	object:outputs.4614504638168534921
+successes	target/.rustc_info.json	/^{"rustc_fingerprint":8401154174455286909,"outputs":{"4614504638168534921":{"success":true,"statu/;"	o
 tableType	target/debug/build/lz4-sys-2c542e20251a71fa/out/include/lz4.h	/^    LZ4_u32 tableType;$/;"	m	struct:LZ4_stream_t_internal	typeref:typename:LZ4_u32
 tableType	target/debug/build/lz4-sys-b0b14f685a468cfa/out/include/lz4.h	/^    LZ4_u32 tableType;$/;"	m	struct:LZ4_stream_t_internal	typeref:typename:LZ4_u32
 table_management	src/main.rs	/^pub mod table_management;$/;"	n
