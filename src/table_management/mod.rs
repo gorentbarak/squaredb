@@ -43,6 +43,15 @@ pub mod tests {
     }
 
     #[test]
+    fn test_columntype_bytes() {
+        let columntype = ColumnType::Bytes(Column::new("column"));
+        assert_eq!(
+            columntype,
+            ColumnType::Bytes(Column { name: "column".to_string(), content: None })
+        )
+    }
+
+    #[test]
     fn test_row() {
         let row = Row::new(vec![ColumnType::Int(Column::new("column"))]);
         assert_eq!(
@@ -64,8 +73,9 @@ pub enum ColumnType {
      * This type is to allow for multiple types of columns (currently the Int type, a 64-bit integer, and the Str type, a string).
      * I'll add more types later.
      */
-    Int(Column<i64>),    // Support for the integer type.
-    Str(Column<String>), // Support for the string type.
+    Int(Column<i64>),       // Support for the integer type.
+    Str(Column<String>),    // Support for the string type.
+    Bytes(Column<Vec<u8>>), // Support for the bytes type.
 }
 
 #[derive(Debug, PartialEq, Clone, Serialize, Deserialize)]
@@ -96,7 +106,7 @@ pub struct Row {
 
 pub fn create_table(name: &str) -> Table {
     // Create a new table.
-    Table { name: name.to_string(), rows: Vec::new() }
+    Table { name: name.to_string(), rows: Vec::with_capacity(1000) }
 }
 
 impl Row {
