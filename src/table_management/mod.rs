@@ -1,8 +1,12 @@
+use std::collections::VecDeque;
+
 use serde::{Deserialize, Serialize};
 
 use uuid;
 #[cfg(test)]
 pub mod tests {
+    use std::collections::VecDeque;
+
     use super::{create_table, Column, ColumnType, Row};
 
     #[test]
@@ -15,7 +19,7 @@ pub mod tests {
     #[test]
     fn test_table() {
         let table =
-            create_table("name").insert_row(Row::new(vec![ColumnType::Int(Column::new("column"))]));
+            create_table("name").insert_row(Row::new(VecDeque::from([ColumnType::Int(Column::new("column"))])));
         assert_eq!(table.name, "name");
         assert_eq!(table.rows.len(), 1);
         assert_eq!(
@@ -53,7 +57,7 @@ pub mod tests {
 
     #[test]
     fn test_row() {
-        let row = Row::new(vec![ColumnType::Int(Column::new("column"))]);
+        let row = Row::new(VecDeque::from([ColumnType::Int(Column::new("column"))]));
         assert_eq!(
             row.columns[0],
             ColumnType::Int(Column { name: "column".to_string(), content: None })
@@ -75,7 +79,7 @@ pub enum ColumnType {
      */
     Int(Column<i64>),       // Support for the integer type.
     Str(Column<String>),    // Support for the string type.
-    Bytes(Column<Vec<u8>>), // Support for the bytes type.
+    Bytes(Column<VecDeque<u8>>), // Support for the bytes type.
 }
 
 #[derive(Debug, PartialEq, Clone, Serialize, Deserialize)]
@@ -84,7 +88,7 @@ pub struct Table {
      * I'll probably make a better abstraction for this later.
      */
     pub(crate) name: String,
-    pub(crate) rows: Vec<Row>,
+    pub(crate) rows: VecDeque<Row>,
 }
 
 #[derive(Debug, PartialEq, Clone, Serialize, Deserialize)]
@@ -101,16 +105,16 @@ pub struct Row {
      * It's child is a Column.
      */
     pub(crate) id: String, // Use uuid version 4.
-    pub(crate) columns: Vec<ColumnType>,
+    pub(crate) columns: VecDeque<ColumnType>,
 }
 
 pub fn create_table(name: &str) -> Table {
     // Create a new table.
-    Table { name: name.to_string(), rows: Vec::with_capacity(1000) }
+    Table { name: name.to_string(), rows: VecDeque::with_capacity(10000) }
 }
 
 impl Row {
-    pub fn new(columns: Vec<ColumnType>) -> Row {
+    pub fn new(columns: VecDeque<ColumnType>) -> Row {
         Row { id: uuid::Uuid::new_v4().to_string(), columns }
     }
 }
@@ -128,7 +132,7 @@ impl<T> Column<T> {
 }
 
 impl Table {
-    pub fn set_rows(mut self, content: Vec<Row>) -> Table {
+    pub fn set_rows(mut self, content: VecDeque<Row>) -> Table {
         // Set the columns of a table.
         self.rows = content;
         self
@@ -136,7 +140,7 @@ impl Table {
 
     pub fn insert_row(mut self, val: Row) -> Table {
         // Add a column to the table,
-        self.rows.push(val);
+        self.rows.push_back(val);
         self
     }
 }
